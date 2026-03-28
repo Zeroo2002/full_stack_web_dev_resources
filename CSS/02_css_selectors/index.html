@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* universal selector */
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* class selector */
+        .red
+        {
+            background-color: red;
+            color: white;
+        }
+
+
+        /* ID selector */
+        #blue{
+            color: blue;
+        }
+
+
+
+        /* group selector */
+        h3, p, div{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+        /* Descendant selector */
+
+        div p{
+            color:red;
+            background-color: aqua;
+        }
+
+        /* Child selector */
+        div > p{
+            color: blue;
+            background-color: yellow;
+        }
+
+
+
+        /* pseudo selector */
+        a:visited{
+            color: black;
+        }
+
+        a:hover{
+            background-color: yellow;
+            color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>Universal selector(*)</li>
+            <li>Element selector(p, h1, etc)</li>
+            <li>Class selector(.)</li>
+            <li>ID selector(#)</li>
+            <li>Group selector</li>
+            <li>Child selector</li>
+        </ol>
+
+        <p>I am a paragraph inside div</p>
+
+        <article>
+            <p>I am Descendant of div</p>
+        </article>
+    </div>
+
+
+    <a href="https://www.google.com">Go to Google</a>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore?</p>
+    <h3 class="red">Hi I am red</h3>
+    <p id="blue">Hi I am ID blue</p>
+
+
+</body>
+</html>
