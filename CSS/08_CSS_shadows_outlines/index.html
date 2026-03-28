@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid blue;
+            padding: 34px;
+            box-shadow: 19px 12px 20px 6px #8c5252;
+
+        }
+
+        .lorem{
+            margin: 10px;
+            text-shadow: 2px 2px 5px rgb(81, 213, 81);
+            border: 2px solid;
+            outline: 2px solid red;
+            outline-offset: 10px;
+        }
+
+        .glow{
+            text-shadow: 0 0 10px rgb(98, 0, 255), 0 0 20px rgb(98, 0, 255), 0 0 30px rgb(98, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <p  class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nesciunt necessitatibus saepe praesentium optio. Non nulla nobis id! Suscipit nobis voluptates expedita facilis eius et deleniti itaque repellendus ratione voluptatem, vel excepturi praesentium. Repellat perferendis iusto soluta doloremque quo provident necessitatibus dignissimos eaque atque nihil.
+    </p>
+
+
+
+
+    <p class="glow">
+        WELCOME
+    </p>
+</body>
+</html>
