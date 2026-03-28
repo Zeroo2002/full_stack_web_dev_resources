@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* universal selector: 0 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* element selector: 1 */
+        h1 {
+            color: blue;
+        }
+
+        /* Class selector: 10 */
+        .yellow {
+            color: yellow;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        /* attribute selector: 10 */
+        [data-x="a"] {
+            color: rgb(189, 62, 168);
+        }
+
+        /* !important: infinite */
+        h4 {
+            color: brown !important;
+        }
+
+        /* multiple selector: h5 + .yellow = 1 + 10 */
+        h5.yellow {
+            color: lime;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            CSS Cascading Algorithm
+        </h1>
+        <ol>
+            <li>
+                <h3>Position and order of appearance: the order in which your CSS rules appear</h3>
+            </li>
+            <li>
+                <h3>Specificity: an algorithm that determines which CSS selector has the strongest match (inline > ID >
+                    class > element > universal)</h3>
+            </li>
+            <li>
+                <h3>Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS
+                    from a browser extension, or your authored CSS</h3>
+            </li>
+            <li>
+                <h3>Importance: some CSS rules are weighted more heavily than others, especially with the !important
+                    rule type</h3>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <h2 class="yellow cred cpurple" data-x="a">Lorem ipsum dolor sit amet.</h2>
+
+        <h4 class="yellow cred cpurple brown" data-x="a">Lorem ipsum dolor sit amet.</h4>
+        <h5 class="yellow cred cpurple brown" data-x="a">Lorem ipsum dolor sit amet.</h5>
+    </div>
+</body>
+
+</html>
+
+
+
+<!-- 
+Quick quiz:     
+
+a.harryclass.rohan-class[href]:hover {
+  color: red;
+}
+
+
+--------
+soln:
+--------
+
+
+a = 1
+.harryclass = 10
+.rohan-class = 10
+[href] = 10
+:hover = 10
+
+
+ans: 41
+
+
+-->

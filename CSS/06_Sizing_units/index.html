@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: cyan;
+            border: 2px solid;
+            width: 80vw;
+            width: 80vmax;
+            margin: auto;
+        }
+
+        .container {
+            background-color: cyan;
+            border: 2px solid;
+            width: 80vw;
+            margin: 23px auto;
+            min-height: 50vh;
+            /* 2em: two times of current value of that element */
+            /* 2rem: two times of current value of the root */
+            /* font-size: 2em; */
+        }
+
+        .container>div {
+            background-color: cyan;
+            border: 2px solid;
+            width: 50%;
+            margin: 23px auto;
+            /* 2em: two times of current value of that element */
+            /* 2rem: two times of current value of the root */
+            /* font-size: 2em; */
+        }
+
+        .container>div>div {
+            background-color: cyan;
+            border: 2px solid;
+            width: 50%;
+            margin: 23px auto;
+            /* 2em: two times of current value of that element */
+            /* 2rem: two times of current value of the root */
+            /* font-size: 2em; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum aliquam quis officia laboriosam fugiat
+        similique. Reiciendis quo, facilis animi, consequuntur, nesciunt eos fugit ratione magnam porro distinctio id
+        quidem minima eaque natus autem accusantium.
+    </div>
+
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, perferendis iste quaerat corporis esse
+            cumque voluptate tenetur, necessitatibus cupiditate eos sit tempore nulla nostrum error. Atque, expedita
+            nemo. Illo tempore, voluptatibus tempora praesentium consequuntur quam. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Nulla totam dolore cum odio ullam. Laborum ipsum minus impedit temporibus
+            obcaecati exercitationem nisi, dolore asperiores vitae blanditiis necessitatibus similique deserunt quam
+            placeat veritatis ad quis facere sit voluptas. Amet, consequatur quaerat,
+            <div>
+                blanditiis exercitationem nobis ullam ex numquam quis repudiandae dolor pariatur! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Tempora numquam nobis dignissimos saepe magnam ducimus voluptatum
+                totam nulla error architecto, sed dicta libero quam consectetur, eveniet ea corrupti vero? Optio ducimus
+                accusantium atque minima veritatis? Blanditiis aliquam sequi pariatur amet provident officiis libero
+                impedit velit ad, vel voluptatibus perspiciatis necessitatibus accusamus, quis similique harum
+                laudantium repellat corporis voluptates adipisci corrupti consequatur! Vitae quasi aut non dolor
+                molestiae labore iusto iure autem officia nostrum. Placeat eum totam aut, quasi voluptatem consequatur
+                sint, deleniti distinctio voluptatum blanditiis doloremque. Quisquam odit non delectus vero iure, eos
+                assumenda aliquid consectetur culpa soluta? Odio, ratione.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
