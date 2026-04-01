@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .overflowtype {
+            display: inline-block;
+        }
+
+        .visible {
+            width: 10vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: visible;
+        }
+
+        .hidden {
+            width: 10vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        .scroll {
+            width: 10vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: scroll;
+            white-space: nowrap;
+        }
+
+        .auto {
+            width: 10vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: auto;
+        }
+
+        .ellipsis {
+            width: 10vw;
+            height: 10vh;
+            border: 2px solid black;
+            /* overflow-x: scroll; */
+            /* overflow-y: hidden; */
+            overflow: scroll hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        h2{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overflowtype">
+        <h2>Visible</h2>
+        <div class="visible">
+            I am Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, porro eos quo nam vero nisi incidunt
+            tempore numquam dolorum distinctio repellat eum iure, voluptate voluptatum ipsam ea quod expedita cum
+            repudiandae, odit enim veniam sed? Ea similique debitis rem in praesentium mollitia voluptate facilis, ut
+            nobis!
+        </div>
+    </div>
+    <div class="overflowtype">
+        <h2>Hidden</h2>
+        <div class="hidden">
+            I am Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, porro eos quo nam vero nisi incidunt
+            tempore numquam dolorum distinctio repellat eum iure, voluptate voluptatum ipsam ea quod expedita cum
+            repudiandae, odit enim veniam sed? Ea similique debitis rem in praesentium mollitia voluptate facilis, ut
+            nobis!
+        </div>
+    </div>
+    <div class="overflowtype">
+        <h2>Scroll</h2>
+        <div class="scroll">
+            I am Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, porro eos quo nam vero nisi incidunt
+            tempore numquam dolorum distinctio repellat eum iure, voluptate voluptatum ipsam ea quod expedita cum
+            repudiandae, odit enim veniam sed? Ea similique debitis rem in praesentium mollitia voluptate facilis, ut
+            nobis!
+        </div>
+    </div>
+    <div class="overflowtype">
+        <h2>Auto</h2>
+        <div class="auto">
+            I am Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, porro eos quo nam vero nisi incidunt
+            tempore numquam dolorum distinctio repellat eum iure, voluptate voluptatum ipsam ea quod expedita cum
+            repudiandae, odit enim veniam sed? Ea similique debitis rem in praesentium mollitia voluptate facilis, ut
+            nobis!
+        </div>
+    </div>
+    <div class="overflowtype">
+        <h2>Auto</h2>
+        <div class="auto">
+            I am Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, porro eos quo nam vero nisi incidunt
+            tempore numquam dolorum distinctio repellat eum iure, voluptate voluptatum ipsam ea quod expedita cum
+            repudiandae, odit enim veniam sed? Ea similique debitis rem in praesentium mollitia voluptate facilis, ut
+            nobis!
+        </div>
+    </div>
+    <div class="overflowtype">
+        <h2>Ellipsis</h2>
+        <div class="ellipsis">
+            I am Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, porro eos quo nam vero nisi incidunt
+            tempore numquam dolorum distinctio repellat eum iure, voluptate voluptatum ipsam ea quod expedita cum
+            repudiandae, odit enim veniam sed? Ea similique debitis rem in praesentium mollitia voluptate facilis, ut
+            nobis!
+        </div>
+    </div>
+</body>
+
+</html>

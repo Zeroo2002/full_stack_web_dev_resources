@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 10vh;
+    background-color: pink;
+}
+
+main{
+    box-sizing: border-box;
+}
+.boxes{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(100, 248, 100);
+}
+
+.box{
+    /* border: 2px solid black; */
+    width: 20vw;
+    height: 20vw;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.box:nth-child(1){
+    background-color: yellow;
+}
+.box:nth-child(2){
+    background-color: rgb(98, 237, 247);
+}
+
+.more{
+    height: 40vh;
+}
+.welcome{
+    width: 70vw;
+    height: 100px;
+    border: 2px solid black;
+    margin: 50px auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky{
+    width: 3vw;
+    height: 3vw;
+    border: 2px solid;
+    position: fixed;
+    right: 5vw;
+    bottom: 25vh;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+
+footer{
+    background-color: grey;
+    height: 8vh;
+}

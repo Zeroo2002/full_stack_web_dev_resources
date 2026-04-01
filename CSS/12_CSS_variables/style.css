@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: var(--sec_nav_color);
+    color: white;
+    height: 11vh;
+    box-sizing: border-box;
+
+}
+main{
+    background-color: var(--sec_main_color);
+    color: white;
+    height: 89vh;
+}
+
+nav > ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2vw 15.1vw;
+    box-sizing: border-box;
+}
+
+
+/* variables */
+:root{
+    --nav_color: rgb(3, 3, 102);
+    --sec_nav_color : rgb(2, 165, 81);
+    --main_color: rgb(84, 146, 218);
+    --sec_main_color: rgb(101, 208, 153);
+}

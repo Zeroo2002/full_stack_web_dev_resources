@@ -1,0 +1,27 @@
+.container{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* flex-flow: flex-direction flex-wrap; */
+    /* flex-flow: column wrap; */
+    gap: 0 50px;
+}
+
+.items{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    margin: 10px;
+}
+
+.order2{
+    order: 1;
+    /* flex-grow: 10; */
+    flex-shrink: 2;
+    align-self: right;
+
+}

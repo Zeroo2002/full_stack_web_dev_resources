@@ -1,0 +1,51 @@
+/* .box:first-child{
+    background-color: red;
+}
+
+.box::first-line{
+    color: blueviolet;
+} */
+
+.boxes{
+    border: 2px solid;
+}
+
+.boxes *{
+    color: blue;
+}
+.box{
+    margin: 15px;
+}
+
+[data-color="primary"]{
+    border: 2px solid red;
+}
+
+[data-color="secondary"]{
+    border: 2px solid yellow;
+}
+
+[data-color="ternary"]{
+    border: 2px solid green;
+}
+
+
+
+.boxes::before{
+    content: "This is before content";
+    color: red;
+}
+.boxes::after{
+    content: "This is after content";
+    color: red;
+}
+
+
+::selection{
+    color: white;
+    background-color: black;
+}
+
+::placeholder{
+    color: green;
+}
