@@ -132,3 +132,8 @@
     position: relative;
     top: 3.5px;
 }
+
+.download:hover{
+    color: rgb(85, 85, 85);
+    background-color: rgb(247, 231, 140);
+}
