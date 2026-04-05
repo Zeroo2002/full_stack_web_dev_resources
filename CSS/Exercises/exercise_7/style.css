@@ -1,0 +1,28 @@
+.container{
+    width: 80vw;
+    height: 60vh;
+    border: 2px solid;
+}
+
+.ball{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid red;
+    background-color: red;
+    animation: bounce_animation 2s linear infinite backwards;
+}
+
+@keyframes bounce_animation {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(150px, 415px);
+        width: 35px;
+        height: 30px;
+    }
+    100%{
+        transform: translate(600px, 100px);
+    }
+}
