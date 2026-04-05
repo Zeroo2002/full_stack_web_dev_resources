@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.box{
+    width: 150px;
+    height: 90px;
+    /* border: 2px solid; */
+    background-color: rgb(197, 197, 197);
+    /* perspective: 500px; */
+}
+
+.blue{
+    width: 150px;
+    height: 90px;
+    /* border: 2px solid; */
+    background-color: rgb(136, 220, 238);
+    transition: all 1s linear 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* translateX */
+.translateX:hover{
+    transform: translateX(50px);
+}
+
+/* translateY */
+.translateY:hover{
+    transform: translateY(50px);
+}
+
+/* translate */
+.translate:hover{
+    transform: translate(30px, 45px);
+}
+
+/* scaleX */
+.scaleX:hover{
+    transform: scaleX(2.5);
+}
+
+/* scaleY */
+.scaleY:hover{
+    transform: scaleY(2.5);
+}
+
+/* scale */
+.scale:hover{
+    transform: scale(2.5, 1.5);
+}
+
+/* rotationX */
+.rotationX:hover{
+    transform: rotate(45deg);
+}
+
+/* rotationY */
+.rotationY:hover{
+    transform: rotate(-75deg);
+}
+
+/* rotation */
+.rotation:hover{
+    transform: rotate(30deg);
+}
+
+/* skewX */
+.skewX:hover{
+    transform: skewX(15deg);
+}
+
+/* skewY */
+.skewY:hover{
+    transform: skewY(15deg);
+}
+
+
+/* skew */
+.skew:hover{
+    transform: skew(20deg, 25deg);
+}
+
+/* matrix */
+.matrix:hover{
+    transform: matrix(1, 2, -1, 1, 80, 80);
+}
+
+/* matrix3D */
+.matrix3d:hover{
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 6, 0, 0, 0, 1, 0, 50, 100, 0, 1.1);
+}
+
+
+/* translate3d */
+.translate3d:hover{
+    font-size: 8px;
+    width: 50px;
+    height: 50px;
+    transform: perspective(500px) translate3d(60px, 50px, 100px) rotate(50deg);
+}
