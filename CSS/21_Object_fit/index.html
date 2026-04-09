@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Position</title>
+    <style>
+        .container{
+            height: 634px;
+            width: 688px;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        img{
+            /* width: 466px;
+            height: 488px; */
+            height: 634px;
+            width: 688px;
+
+            /* object-fit: cover;   --> covers the given height and width by cutting the overflowing content if needed */
+            object-fit: cover;
+            object-position: bottom;
+
+            /* object-fit: contain;   --> fits the image inside the container, leaves empty space if needed*/
+            /* object-fit: contain;
+             */
+
+            /* object-fit: fill;   --> stretched or squeezed to fit and fill the container*/
+            /* object-fit: fill; */
+
+            /* object-fit: none;   --> image is not resized*/
+            /* object-fit: none; */
+
+            /* object-fit: scale-down;   --> scaled down to the smallest version of none or contain*/
+            /* object-fit: scale-down; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="imageee.jpg" alt="">
+    </div>
+</body>
+</html>
